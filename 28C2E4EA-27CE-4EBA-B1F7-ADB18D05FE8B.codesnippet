@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>lazytableView</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (UITableView *)tableView {
+    if (!_tableView) {
+        UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
+        tableView.backgroundColor = [UIColor colorWithRGBHex:0xf4f4f5];
+        tableView.delegate = self;
+        tableView.dataSource = self;
+        tableView.estimatedRowHeight = &lt;#44#&gt;;
+        tableView.rowHeight = UITableViewAutomaticDimension;
+        tableView.showsVerticalScrollIndicator = NO;
+        tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        tableView.keyboardDismissMode = UIScrollViewKeyboardDismissModeOnDrag;
+        UIEdgeInsets edge = UIEdgeInsetsZero;
+        if (@available(iOS 11.0, *)) {
+            tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+            edge = [[UIApplication sharedApplication] delegate].window.safeAreaInsets;
+            tableView.contentInset = UIEdgeInsetsMake(0, 0, &lt;#edge.bottom#&gt;, 0);
+        }
+        [tableView registerClass:&lt;#UITableViewCell#&gt;.class forCellReuseIdentifier:NSStringFromClass(&lt;#UITableViewCell#&gt;.class)];
+        _tableView = tableView;
+    }
+    return _tableView;
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>28C2E4EA-27CE-4EBA-B1F7-ADB18D05FE8B</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>lazytableView</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>tableView</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

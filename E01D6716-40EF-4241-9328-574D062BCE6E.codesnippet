@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>routeJump</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>NSString *urlStr = [urlStr stringByReplacmentWhitespaceAndTrimmingCharacters];
+        urlStr = [urlStr urlEncode];
+        NSURL *url = [NSURL URLWithString:urlStr];
+        if (url != nil) {
+            [[CTMediator sharedInstance] jump:url from:&lt;#[UIViewController windowCurrentViewController]#&gt; completion:^(JumpResult *result) {
+                
+            }];
+        }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>E01D6716-40EF-4241-9328-574D062BCE6E</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>路由跳转</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>routeJump</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

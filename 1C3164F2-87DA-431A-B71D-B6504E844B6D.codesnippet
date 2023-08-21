@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>lazyButton</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (UIButton *)&lt;#myButton#&gt; {
+    if (!_&lt;#myButton#&gt;) {
+        UIButton *btn = [[UIButton alloc] init];
+        btn.titleLabel.font = [UIFont systemFontOfSize:&lt;#14#&gt;];
+        [btn setTitle:@"&lt;#title#&gt;" forState:UIControlStateNormal];
+        [btn setTitleColor:[UIColor colorWithHexString:@"&lt;##E64C3D#&gt;"] forState:UIControlStateNormal];
+        [btn addTarget:self action:@selector(&lt;#actionMyButtonDidClick:#&gt;) forControlEvents:UIControlEventTouchUpInside];
+        _&lt;#myButton#&gt; = btn;
+    }
+    return _&lt;#myButton#&gt;;
+}
+
+- (void)&lt;#actionMyButtonDidClick:#&gt;(UIButton *)button {
+    
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>1C3164F2-87DA-431A-B71D-B6504E844B6D</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>lazyButton</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>lazyButton</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

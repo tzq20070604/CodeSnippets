@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>paragraphStyle</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>NSMutableAttributedString *attrStr = [[NSMutableAttributedString alloc] initWithString:&lt;#myStr#&gt;.length &gt; 0 ? myStr : @""];
+NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+[paragraphStyle setLineSpacing:&lt;#6#&gt;];
+[paragraphStyle setLineBreakMode:&lt;#NSLineBreakByTruncatingTail#&gt;];
+paragraphStyle.alignment = &lt;#NSTextAlignmentLeft#&gt;;
+[attrStr addAttribute:NSParagraphStyleAttributeName value:paragraphStyle range:NSMakeRange(0, [attrStr.string length])];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>8F1FFBF6-EBEF-43C7-BE52-FC78C5F41E9E</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>文字段落样式</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>paragraphStyle</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
